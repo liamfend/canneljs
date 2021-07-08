@@ -25,5 +25,9 @@
   },
   "bugs": {
     "url": "https://github.com/liamfend/canneljs/issues"
+  },
+  "dependencies": {
+    "cps": "^1.0.0",
+    "cps-theme": "^1.0.0"
   }
 }
