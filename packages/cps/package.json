@@ -21,7 +21,10 @@
     "url": "git+https://github.com/liamfend/canneljs.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rm -rf ./types ./es ./lib && yarn build:es &&yarn build:lib",
+    "build:es": " tsc --outDir es --declarationDir types",
+    "build:lib": " tsc --outDir lib --declaration false --module commonjs --target ES5"
   },
   "bugs": {
     "url": "https://github.com/liamfend/canneljs/issues"
