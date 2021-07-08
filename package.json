@@ -13,8 +13,10 @@
     "clean": "lerna clean",
     "lint:js": "eslint  package/**/*.tsx --fix",
     "lint-staged": "lint-staged",
-    "build:cps":"lerna run --scope cps build  --stream",
-    "build:theme":"lerna run --scope cps-theme build  --stream"
+    "build:cps": "lerna run --scope cps build  --stream",
+    "build:theme": "lerna run --scope cps-theme build  --stream",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -28,8 +30,14 @@
   },
   "homepage": "https://github.com/liamfend/canneljs#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
