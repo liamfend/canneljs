@@ -1,0 +1,28 @@
+{
+  "name": "canneljs",
+  "version": "1.0.0",
+  "description": "canneljs", 
+  "main": "index.js",
+  "private": true,  
+  "workspaces": [ 
+     "packages/*"
+  ],
+  "scripts": {
+    "bootstrap":"lerna bootstrap",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamfend/canneljs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamfend/canneljs/issues"
+  },
+  "homepage": "https://github.com/liamfend/canneljs#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
