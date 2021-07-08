@@ -1,7 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from './Button';
+import 'cps-theme/src/button.scss';
+import { Button } from 'cps';
 
 export default {
   title: 'Mobile/MyButton',
