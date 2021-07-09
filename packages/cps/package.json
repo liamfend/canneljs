@@ -25,10 +25,10 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "rm -rf ./types ./es ./lib && yarn build:es &&yarn build:lib",
-    "build:es": "tsc   --outDir es --declarationDir types --declaration true",
-    "build:lib": "tsc  --outDir lib --declaration false --module commonjs --target ES5",
-    "build:es1": "tsc --rootDir ./components --outDir es --declarationDir types --declaration true",
-    "build:lib1": "tsc --rootDir ./components --outDir lib --declaration false --module commonjs --target ES5"
+    "build:es1": "tsc -b  --outDir es --declarationDir types --declaration true",
+    "build:lib1": "tsc -b --outDir lib --declaration false --module commonjs --target ES5",
+    "build:es": "tsc -b tsconfig.es.json",
+    "build:lib": "tsc -b tsconfig.cjs.json"
   },
   "bugs": {
     "url": "https://github.com/liamfend/canneljs/issues"

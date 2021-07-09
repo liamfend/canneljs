@@ -64,5 +64,5 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
   "include": ["packages", "scripts", "tooling"],
-  "exclude": ["**/.*/", "**/build", "**/node_modules","packages/cps-stories/**"]
+  "exclude": ["**/.*/", "**/build", "**/node_modules"]
 }

@@ -13,7 +13,7 @@
     "clean": "lerna clean",
     "lint:js": "eslint  package/**/*.tsx --fix",
     "lint-staged": "lint-staged",
-    "build:cps": "lerna run --scope cps build  --stream",
+    "build:cps": "lerna exec --scope cps yarn build",
     "build:theme": "lerna run --scope cps-theme build  --stream",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
