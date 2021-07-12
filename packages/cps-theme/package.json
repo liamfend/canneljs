@@ -24,10 +24,15 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "rm -rf lib && gulp build"
+    "build2": "rm -rf lib && gulp build",
+    "build": "osl-compile build scss",
+    "cps-compiler": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/liamfend/canneljs/issues"
+  },
+  "dependencies": {
+    "cps-compiler": "^1.0.0"
   }
   
 }
